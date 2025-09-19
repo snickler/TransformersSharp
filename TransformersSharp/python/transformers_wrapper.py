@@ -1,4 +1,8 @@
-﻿from typing import Any, Generator, Optional
+﻿import sys
+sys.exec_prefix = sys.executable
+sys.base_exec_prefix = sys.executable
+sys.prefix = sys.executable
+from typing import Any, Generator, Optional
 from transformers import pipeline as TransformersPipeline, Pipeline, TextGenerationPipeline
 from huggingface_hub import login
 import torch
