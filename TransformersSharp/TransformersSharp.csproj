@@ -30,5 +30,6 @@
 		<EditorConfigFiles Update=".globalconfig">
 			<Generator>SettingsSingleFileGenerator</Generator>
 		</EditorConfigFiles>
+    <CompilerVisibleItemMetadata Include="AdditionalFiles" MetadataName="SourceItemType" />
 	</ItemGroup>
 </Project>
