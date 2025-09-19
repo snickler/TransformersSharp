@@ -7,6 +7,7 @@
    	<EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
     <DefaultPythonItems>true</DefaultPythonItems>
     <PythonRoot>python</PythonRoot>
+    <EmbedPythonSources>true</EmbedPythonSources>
   </PropertyGroup>
 
   <!-- Temporary: Add Python files manually to test if source generation works at all -->
@@ -27,9 +28,6 @@
 	</ItemGroup>
 	
 	<ItemGroup>
-		<EditorConfigFiles Update=".globalconfig">
-			<Generator>SettingsSingleFileGenerator</Generator>
-		</EditorConfigFiles>
     <CompilerVisibleItemMetadata Include="AdditionalFiles" MetadataName="SourceItemType" />
 	</ItemGroup>
 </Project>
