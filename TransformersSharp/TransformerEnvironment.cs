@@ -1,4 +1,5 @@
-﻿using CSnakes.Runtime;
+﻿using System.Runtime.InteropServices;
+using CSnakes.Runtime;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using TransformersSharp.Pipelines;
@@ -38,9 +39,14 @@ namespace TransformersSharp
                         // TODO: Make this configurable
                         string[] requirements =
                         {
+                            "--extra-index-url https://download.pytorch.org/whl/nightly/cpu",
+                            "torch==2.10.0.dev20250918",
                             "transformers",
+                            "tokenizers @ https://files.pythonhosted.org/packages/5e/b4/c1ce3699e81977da2ace8b16d2badfd42b060e7d33d75c4ccdbf9dc920fa/tokenizers-0.22.0.tar.gz",
+                            "pyyaml @ https://files.pythonhosted.org/packages/54/ed/79a089b6be93607fa5cdaedf301d7dfb23af5f25c398d5ead2525b063e17/pyyaml-6.0.2.tar.gz",
+                            "safetensors @ https://files.pythonhosted.org/packages/ac/cc/738f3011628920e027a11754d9cae9abec1aed00f7ae860abbf843755233/safetensors-0.6.2.tar.gz",
                             "sentence_transformers",
-                            "torch",
+                            "scikit-learn @ git+https://github.com/vask2108/scikit-learn@woa_gha_runner",
                             "pillow",
                             "timm",
                             "einops"
