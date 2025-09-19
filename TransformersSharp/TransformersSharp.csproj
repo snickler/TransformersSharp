@@ -29,5 +29,6 @@
 	
 	<ItemGroup>
     <CompilerVisibleItemMetadata Include="AdditionalFiles" MetadataName="SourceItemType" />
+    <CompilerVisibleProperty Include="EmbedPythonSources" />
 	</ItemGroup>
 </Project>
